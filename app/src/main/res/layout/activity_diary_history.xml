@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2F898"
+    tools:context=".DiaryHistory">
+
+    <Button
+        android:id="@+id/back_button_two"
+        android:layout_width="111dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="536dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="#0191FF"
+        android:text="Back"
+        android:onClick="backMainScreenThree"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reading_history_title" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="368dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/reading_history_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reading_history_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/short_stack"
+        android:text="Reading History"
+        android:textColor="#009688"
+        android:textSize="90px"
+        app:layout_constraintBottom_toTopOf="@+id/back_button_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+    <Button
+        android:id="@+id/modify_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="449dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="19dp"
+        android:onClick="ModifyEntry"
+        android:text="Modify"
+        app:layout_constraintBottom_toTopOf="@+id/delete_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reading_history_title" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="47dp"
+        android:onClick="DeleteEntry"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_button_two"
+        app:layout_constraintTop_toBottomOf="@+id/modify_button" />
+
+
+    <TextView
+        android:id="@+id/entries"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="33dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/comic_neue"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reading_history_title" />
+
+    <TextView
+        android:id="@+id/entries2"
+        android:layout_width="311dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="54dp"
+        android:fontFamily="@font/comic_neue"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entries" />
+
+    <TextView
+        android:id="@+id/entries3"
+        android:layout_width="325dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:fontFamily="@font/comic_neue"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entries2" />
+
+    <TextView
+        android:id="@+id/entries4"
+        android:layout_width="321dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="47dp"
+        android:fontFamily="@font/comic_neue"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entries3" />
+
+    <TextView
+        android:id="@+id/entries5"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="37dp"
+        android:fontFamily="@font/comic_neue"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entries4" />
+
+    <TextView
+        android:id="@+id/entries6"
+        android:layout_width="329dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="39dp"
+        android:fontFamily="@font/comic_neue"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entries5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
